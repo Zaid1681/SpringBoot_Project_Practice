@@ -1,6 +1,7 @@
 package com.zaid.example.Customer.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.zaid.example.Customer.Entity.Customer;
 
@@ -14,5 +15,7 @@ public interface CustomerService {
 	Customer updateCustomerById(Customer customer, Long id);
 
 	void deleteCustomerById(Long id);
+
+	Customer getByEmail(String email);
 
 }
